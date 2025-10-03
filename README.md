@@ -1,16 +1,101 @@
-# React + Vite
+# 3 Year My Love 💕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful React application celebrating 3 years of love with interactive animations and photo gallery.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🏠 **Homepage** - Love statistics and couple information
+- 📸 **Photo Gallery** - Beautiful photo collection with modal view
+- 💌 **Love Letter** - Romantic letter with gift box surprise
+- ✨ **Interactive Animations** - GSAP animations and particle effects
+- 📱 **Responsive Design** - Works on all devices
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- GSAP (GreenSock Animation Platform)
+- CSS3 with modern styling
+- Canvas API for particle effects
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd 3-year-mylove
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically deploy your app
+
+Or use Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
+
+## Project Structure
+
+```
+src/
+├── Pages/
+│   ├── HomePage.jsx          # Main application
+│   ├── HomePage.css          # Homepage styles
+│   ├── PasscodeGSAP.jsx      # Passcode screen
+│   ├── PasscodeScreen.css    # Passcode styles
+│   ├── LoveLoading.jsx       # Loading screen
+│   ├── LoveLoading.css       # Loading styles
+│   ├── HeartParticles.jsx     # Heart particles animation
+│   └── ClickSpark.jsx        # Click spark effects
+├── assets/
+│   └── images/               # All images
+└── App.jsx                    # Main app component
+```
+
+## Customization
+
+- Replace images in `src/assets/images/` with your own photos
+- Modify the love letter content in `HomePage.jsx`
+- Adjust colors and styling in CSS files
+- Update the anniversary date and statistics
+
+## License
+
+This project is for personal use. Feel free to customize it for your own love story! 💕
+
+## Support
+
+If you have any questions or need help, feel free to reach out!
+
+---
+
+Made with ❤️ for your special someone

@@ -11,25 +11,19 @@
   ],
   "routes": [
     {
-      "src": "/assets/(.*)",
+      "src": "/assets/(.*\\.js)",
       "headers": {
         "Content-Type": "application/javascript"
       }
     },
     {
-      "src": "/(.*\\.js)",
-      "headers": {
-        "Content-Type": "application/javascript"
-      }
-    },
-    {
-      "src": "/(.*\\.css)",
+      "src": "/assets/(.*\\.css)",
       "headers": {
         "Content-Type": "text/css"
       }
     },
     {
-      "src": "/(.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.svg)",
+      "src": "/assets/(.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.svg)",
       "headers": {
         "Content-Type": "image/*"
       }

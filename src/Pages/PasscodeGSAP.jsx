@@ -151,7 +151,7 @@ export default function PasscodeGSAP({ onSuccess }) {
         <div className="left-card">
           <img
             className="avatar"
-            src="/src/assets/images/Couple.png"
+            src="/assets/Couple-CbjWpml5.png"
             alt="avatar"
           />
         </div>

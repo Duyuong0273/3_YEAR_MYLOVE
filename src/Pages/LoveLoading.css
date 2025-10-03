@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: pink;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .loading-bar {
+    width: 300px;
+    height: 30px;
+    border: 2px solid #333;
+    background: white;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background: #ff6b81;
+    text-align: center;
+    transition: width 0.05s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .progress-text {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .loading-text {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d6336c;
+  }
+  
+  .hearts {
+    margin-top: 10px;
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  

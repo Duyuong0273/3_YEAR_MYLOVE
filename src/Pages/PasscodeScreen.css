@@ -1,0 +1,183 @@
+.pass-root {
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.pass-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pass-box {
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  min-width: 600px;
+  border: 1px solid #e9ecef;
+}
+
+.left-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dots {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffd7e3;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.dot.filled {
+  background: #ff6b9d;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.key.ok {
+  background: #ff6b9d;
+  color: #ffffff;
+  border-color: #ff6b9d;
+}
+
+.key.del {
+  background: #6c757d;
+  color: #ffffff;
+  border-color: #6c757d;
+}
+
+/* GSAP handles all hover animations */
+
+/* GSAP handles all animations - no CSS transitions needed */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .pass-box {
+    flex-direction: column;
+    min-width: 90%;
+    padding: 20px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .keypad {
+    max-width: 250px;
+  }
+  
+  .key {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .pass-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pass-box {
+    padding: 15px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .keypad {
+    max-width: 200px;
+    gap: 10px;
+  }
+  
+  .key {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .dots {
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+}

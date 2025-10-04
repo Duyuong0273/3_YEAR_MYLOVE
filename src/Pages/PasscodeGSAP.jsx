@@ -5,7 +5,7 @@ import "./PasscodeScreen.css";
 const KEYS = [1, 2, 3, 4, 5, 6, 7, 8, 9, "check", 0, "del"];
 
 export default function PasscodeGSAP({ onSuccess }) {
-  const CORRECT = "10102021"; // ✅ đổi mật khẩu thành 10102021
+  const CORRECT = "10102022"; // ✅ đổi mật khẩu thành 10102021
   const [pass, setPass] = useState("");
   const [message, setMessage] = useState("Nhập pass đi người đẹp 💕");
   const boxRef = useRef(null);
